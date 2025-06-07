@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Boxes</title>
+    <style>
+     .container{
+          background-color:tomato ;
+          height: 500px;
+          width: 100%;
+          padding: 10px;
+          
+          display: flex;
+          flex-direction:column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            height: 800px;
+            width: 100px;
+            background-color: dodgerblue;
+            margin: 15px;
+        }
+    </style>
+</head>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context. -->
+<!-- For example: -->
+<!-- To access an image from assets folder correct way to set src attribute is  -->
+<body class="container">  
+<div class="box">body1</div>
+<div class="box">body 2</div>
+<div class="box">body 3</div>
+<div class="box">body 4</div>
+
+</body>
+
+</html>
