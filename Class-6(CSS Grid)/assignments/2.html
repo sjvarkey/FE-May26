@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Create a Pinterest-like layout using HTML and CSS, without using images, but only using simple boxes with different colors.
+Use CSS Grid to create the layout.
+The layout should have a responsive design and adapt to different screen sizes.
+
+Utilize the variable values provided in boilerplate CSS. -->
+<!-- Test Cases:
+Verify that display property of pin_container is set to 'grid'
+default-icon
+Verify that position property of pin_container is set to 'absolute'
+default-icon
+Verify that content inside pin_container is centered using justify-content
+default-icon
+Verify that grid-row-end property of card_small is set to 'span 26'
+default-icon
+Verify that grid-row-end property of card_medium is set to 'span 33'
+default-icon
+Verify that grid-row-end property of card_large is set to 'span 45' -->
+
+<head>
+    <style>     
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            line-height: 1.5;
+            background-color: #f0f0f0;
+        }
+
+        .pin_container {
+            display: grid;
+            position: absolute;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card_small {
+            height: 150px;
+            grid-row-end: span 26;
+        }
+
+        .card_medium {
+            height: 200px;
+            grid-row-end: span 33;
+        }
+
+        .card_large {
+            height: 300px;
+            grid-row-end: span 45;
+        }
+    </style>
+</head>
+<body>
+	<div class="pin_container">
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_small"></div>
+        <div class="card card_medium"></div>
+        <div class="card card_large"></div>
+    </div>
+</body>
+
+</html>

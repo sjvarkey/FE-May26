@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Verify that 'grid-container' div has display type of grid.
+Verify that header, nav, content, and footer are defined using CSS Grid properties. -->
+
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+	
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            line-height: 1.5;
+            background-color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav content content"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            width: 100vw;
+            height: 100vh;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: whitesmoke;
+            color: black;
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: rgb(136, 135, 135);
+            color: black;
+            /* padding: 20px; */
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #f9f9f979;
+            /* padding: 20px; */
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            /* padding: 10px; */
+        }
+    </style>
+	</head>
+<body>
+	<div class="grid-container">
+		<header class="header">Header</header>
+		<nav class="nav">Nav</nav>
+		<main class="content">Main Content</main>
+		<footer class="footer">Footer</footer>
+	</div>
+</body>
+
+</html>
