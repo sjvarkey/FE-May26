@@ -1,0 +1,79 @@
+<!-- Create an HTML page that demonstrates the use of the position property.
+
+Inside the container <div>:
+
+1. The page should display 4 boxes (divs with 'box' as a class).
+
+2. Each with unique class 'absolute', 'relative', 'fixed', and 'static'.
+
+3. Use CSS to set the associated position attribute respectively.
+
+4. Give all boxes unique top, right, left, and bottom values as well. -->
+
+<!-- Verify that one box is positioned absolute.
+
+Verify that one box is positioned relative.
+
+Verify that one box is positioned fixed.
+
+Verify that one box is positioned static. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property Demonstration</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            position: relative;
+            margin: 50px auto;
+            background-color: #f0f0f0;
+        } 
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: red;
+        }
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: blue;
+        }
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: green;
+        }
+        .static {
+            position: static;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box absolute">Absolute</div>
+        <div class="box relative">Relative</div>
+        <div class="box fixed">Fixed</div>
+        <div class="box static">Static</div>
+    </div>
+</body>
+</html>
+<!-- </head> -->
+<!-- <body> -->
+<!--     <div class="container"> -->

@@ -35,7 +35,7 @@ console.log(cars)
 let arr = [20, 30, 40, 50, 60, 70]
 
 let arr1 = arr.splice(1,3)
-
+ 
 console.log(arr)
 
 console.log(arr1)

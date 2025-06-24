@@ -1,6 +1,10 @@
 {
-    "editor.fontFamily": "arial",
-    "editor.fontSize": 14,
-    "workbench.colorTheme": "Monokai",
-    "code-runner.defaultLanguage": "node"
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 15,
+    "workbench.colorTheme": "Default Dark+",
+    "code-runner.defaultLanguage": "node",
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
+    "editor.fontWeight": "500",
+    "editor.inlineSuggest.enabled": false
 }
