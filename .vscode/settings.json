@@ -6,5 +6,6 @@
     "workbench.preferredLightColorTheme": "Default Dark+",
     "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
     "editor.fontWeight": "500",
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": false,
+    "editor.fontLigatures": false
 }
