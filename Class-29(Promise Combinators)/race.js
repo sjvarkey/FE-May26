@@ -12,7 +12,7 @@ function fetchFromWeatherAPI() {
 
 function fetchFromAccuWeather() {
   return new Promise((resolve , reject) =>
-    setTimeout(() => reject("AppWeather: 20 degrees"), 1200)
+    setTimeout(() => reject("No Data"), 1200)
   );
 }
 
