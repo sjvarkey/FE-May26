@@ -15,35 +15,27 @@ src = './assets/profile.png'
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        .cell {
-            border: 1px solid;
-            margin: auto;
-            margin-top: 10rem;
-            height: 20rem;
-            width: 20rem;
-            display: flex;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="cell"></div>
-
+    <button>Say Hello</button>
 </body>
 <script>
-    // Write your JS program here
-
-    let cellSelect = document.querySelector(".cell")
-
-    document.addEventListener("mouseover", function(e){
-
-        //set image as background
-        
-
-    }
-
-    )
+    // Write your JS program here ====
+    document.querySelector('button').addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.innerText = 'Hello';
+    document.body.appendChild(div);
+});
 
 </script>
 </html>
+
+
+
+<!--Write a program in JS to do the below mentioned task:
+
+When the button is clicked, append a <div> element, 
+containing inner text 'Hello', as Child for the <body> element.
+
+-->
