@@ -7,5 +7,6 @@
     "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
     "editor.fontWeight": "500",
     "editor.inlineSuggest.enabled": false,
-    "editor.fontLigatures": false
+    "editor.fontLigatures": false,
+    "CodeGPT.apiKey": "Perplexity"
 }

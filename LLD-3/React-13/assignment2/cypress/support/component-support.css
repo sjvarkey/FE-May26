@@ -1,0 +1,5 @@
+/* Ensure consistent styling in component tests */
+body {
+  margin: 0;
+  padding: 0;
+}
